@@ -1,5 +1,5 @@
 # Twitter.ApiCaller  
-NET Framework (*project targets 4.8*) library used to interact with Twitter API v2 and v1.1.  
+.NET Framework (*project targets 4.8*) library used to interact with Twitter API v2 and v1.1.  
 
 ## Quick Start  
   
