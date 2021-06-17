@@ -1,7 +1,20 @@
 # Twitter.ApiCaller  
 NET Framework (*project targets 4.8*) library used to interact with Twitter API v2 and v1.1.  
+
+## Quick Start  
   
-## Quick start - scraping demonstration  
+Use these batch commands to clone and compile.  
+*(If you end up copying the script below into a batch file as opposed to running the commands interactively, then make sure you replace each **%** with **%%**.)*  
+  
+```bat
+SET VSWHERE=C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe
+@for /f "usebackq tokens=1* delims=: " %i in (`@"%VSWHERE%"  -latest -requires Microsoft.Component.MSBuild`) do @if /i "%i"=="installationPath" set MSBUILD="%j\MSBuild\Current\Bin\MSBuild.exe"
+git clone https://github.com/nstevens1040/Twitter.ApiCaller.git
+cd Twitter.ApiCaller
+%MSBUILD%
+```  
+  
+## scraping demonstration  
 1. Load the library into **Windows PowerShell**.  
 2. Initialize the utility by entering your **client key** and **client secret** as the first and second arguments in the constructor.  
 3. Authenticate *(credential prompt is not visible in the demonstration below)*.  
