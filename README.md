@@ -12,7 +12,7 @@ git clone https://github.com/nstevens1040/Twitter.ApiCaller.git
 cd Twitter.ApiCaller
 %MSBUILD%
 ```  
-*(If you end up copying the script below into a batch file as opposed to running the commands interactively, then make sure you replace each **%** with **%%**.)*  
+*(If you end up copying the script above into a batch file as opposed to running the commands interactively, then make sure you replace each **%** with **%%**.)*  
   
 ## scraping demonstration  
 1. Load the library into **Windows PowerShell**.  
