@@ -6,8 +6,7 @@
 Use these batch commands to clone and compile.  
   
 ```bat
-SET VSWHERE=C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe
-@for /f "usebackq tokens=1* delims=: " %i in (`@"%VSWHERE%"  -latest -requires Microsoft.Component.MSBuild`) do @if /i "%i"=="installationPath" set MSBUILD="%j\MSBuild\Current\Bin\MSBuild.exe"
+@for /f "usebackq tokens=1* delims=: " %i in (`@"C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe"  -latest -requires Microsoft.Component.MSBuild`) do @if /i "%i"=="installationPath" set MSBUILD="%j\MSBuild\Current\Bin\MSBuild.exe"
 git clone https://github.com/nstevens1040/Twitter.ApiCaller.git
 cd Twitter.ApiCaller
 %MSBUILD%
