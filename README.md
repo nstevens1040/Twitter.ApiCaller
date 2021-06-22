@@ -4,7 +4,7 @@
 ## Requirements  
    - [**.NET Framework 4.8 Developer Pack**](https://download.visualstudio.microsoft.com/download/pr/014120d7-d689-4305-befd-3cb711108212/0307177e14752e359fde5423ab583e43/ndp48-devpack-enu.exe)  
       - *(Click the link above and run the installer)*  
-   - [**Visual Studio Build Tools (MSBuild.exe)**]('https://download.visualstudio.microsoft.com/download/pr/2d4f424c-910d-4198-80de-aa829c85ae6a/8a2d8fc2b4e671de2dd45554558c0ad6949bd2fdbfefc284e6e147cf90f4b42d/vs_BuildTools.exe)  
+   - [**Visual Studio Build Tools (MSBuild.exe)**](https://download.visualstudio.microsoft.com/download/pr/2d4f424c-910d-4198-80de-aa829c85ae6a/8a2d8fc2b4e671de2dd45554558c0ad6949bd2fdbfefc284e6e147cf90f4b42d/vs_BuildTools.exe)  
       - *(Click the link above and launch the installer from the command prompt like the example below)*  
 ```bat
 vs_BuildTools.exe --add Microsoft.VisualStudio.Workload.MSBuildTools --quiet
