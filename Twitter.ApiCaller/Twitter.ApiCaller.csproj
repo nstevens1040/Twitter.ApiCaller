@@ -31,7 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>twicon_.ico</ApplicationIcon>
+    <ApplicationIcon>MainIconTW.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -41,6 +41,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>lib\System.Management.Automation.dll</HintPath>
@@ -96,7 +97,8 @@
     <EmbeddedResource Include="lib\System.Web.Extensions.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="twicon_.ico" />
+    <EmbeddedResource Include="icon\MainIconTW.ico" />
+    <Content Include="MainIconTW.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
