@@ -22,7 +22,7 @@ vs_BuildTools.exe --add Microsoft.VisualStudio.Workload.MSBuildTools --quiet
   
 ## Build 
 Alternatively, you can use these batch commands to install the prerequisites, clone and compile. I tested the the batch commands in Windows Sandbox.  
-  
+<!--
 [```bat
 for /f "usebackq tokens=4 delims= " %i in (`wmic product get description ^| findstr /C:".NET Framework 4.8 Targeting Pack"`) do @SET DOTNETVERSION=%i
 @IF %DOTNETVERSION% NEQ 4.8 @powershell -noprofile -ep remotesigned -c [System.Net.WebClient]::New().DownloadFile('https://download.visualstudio.microsoft.com/download/pr/014120d7-d689-4305-befd-3cb711108212/0307177e14752e359fde5423ab583e43/ndp48-devpack-enu.exe',$env:USERPROFILE + '\Downloads\ndp48-devpack-enu.exe') && @%USERPROFILE%\Downloads\ndp48-devpack-enu.exe /install /quiet /norestart && @powershell -noprofile -ep remotesigned -c while(Get-Process -Name ndp48-devpack-enu -ea 0){}
@@ -35,3 +35,4 @@ git clone https://github.com/nstevens1040/Twitter.ApiCaller.git && cd Twitter.Ap
 ```  
 *(If you end up copying the script above into a batch file as opposed to running the commands interactively, then make sure you replace each **%** with **%%**.)*  
 ](url)
+-->
