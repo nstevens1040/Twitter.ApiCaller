@@ -1,15 +1,15 @@
 # Twitter.ApiCaller  
 .NET Framework (*project targets 4.8*) library used to interact with Twitter API v2 and v1.1.  
-  
-## Requirements  
-   - [**.NET Framework 4.8 Developer Pack**](https://download.visualstudio.microsoft.com/download/pr/014120d7-d689-4305-befd-3cb711108212/0307177e14752e359fde5423ab583e43/ndp48-devpack-enu.exe)  
-      - *(Click the link above and run the installer)*  
-   - [**Visual Studio Build Tools (MSBuild.exe)**](https://download.visualstudio.microsoft.com/download/pr/2d4f424c-910d-4198-80de-aa829c85ae6a/8a2d8fc2b4e671de2dd45554558c0ad6949bd2fdbfefc284e6e147cf90f4b42d/vs_BuildTools.exe)  
-      - *(Click the link above and launch the installer from the command prompt like the example below)*  
+## Quick Start
+   1. Install the latest **[.NET SDK](https://dotnet.microsoft.com/en-us/download)** (provides dotnet.exe)
+   2. Run the following to clone and build. The library will be built and saved to ```%CD%\build\Twitter.ApiCaller.dll```
 ```bat
-vs_BuildTools.exe --add Microsoft.VisualStudio.Workload.MSBuildTools --quiet
-```  
-  
+git clone https://github.com/nstevens1040/Twitter.ApiCaller.git
+cd Twitter.ApiCaller
+dotnet build -target:clean
+mkdir build >NUL  2>NUL
+dotnet build --output build
+```
 ## Scraping Demonstration  
 1. Load the library into **Windows PowerShell**.  
 2. Initialize the utility by entering your **client key** and **client secret** as the first and second arguments in the constructor.  
