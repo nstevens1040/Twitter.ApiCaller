@@ -127,6 +127,9 @@
   <data name="System_Management_Automation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\lib\System.Management.Automation.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="System_Resources_Extensions" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\lib\System.Resources.Extensions.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="System_Security" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\lib\System.Security.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
