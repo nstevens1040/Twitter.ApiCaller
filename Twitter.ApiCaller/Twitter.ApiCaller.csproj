@@ -50,6 +50,7 @@
     </Reference>
     <Reference Include="System.Resources.Extensions">
       <HintPath>lib\System.Resources.Extensions.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.Security" />
     <Reference Include="System.Web" />
